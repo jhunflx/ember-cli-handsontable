@@ -13,6 +13,13 @@ module.exports = function(defaults) {
     This build file does *not* influence how the addon or the app using it
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
+  app.import('bower_components/handsontable/dist/handsontable.full.css');
+  app.import('bower_components/handsontable/dist/handsontable.full.js');
+  app.import('bower_components/moment/moment.js');
+  app.import('bower_components/pikaday/pikaday.js');
+  app.import('bower_components/pikaday/scss/pikaday.scss');
+  app.import('bower_components/zeroclipboard/dist/ZeroClipboard.js');
+  app.import('bower_components/zeroclipboard/dist/ZeroClipboard.swf');
 
   return app.toTree();
 };
